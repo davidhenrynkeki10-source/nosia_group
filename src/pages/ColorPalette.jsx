@@ -43,17 +43,7 @@ export default function ColorPalette() {
                   }}
                 >
                   <span className="hover-scale-item strip-custom-label">
-                    {color.label === 'noisia. energy' ? (
-                      <>
-                        <span className="mobile-stacked-label">
-                          <span>noisia.</span>
-                          <span>energy</span>
-                        </span>
-                        <span className="desktop-inline-label">noisia. energy</span>
-                      </>
-                    ) : (
-                      color.label
-                    )}
+                    {color.label}
                   </span>
                   <div className="hover-scale-item dash-item">
                     <div
