@@ -48,7 +48,7 @@ export const colors = [
     rgb: 'rgb(51, 51, 51)',
     description: 'Very dark gray.',
     textColor: '#ffffff',
-    dashColor: '#000000',
+    dashColor: '#87CEEB',
     externalLink: 'https://noisia.energy',
   },
   {
