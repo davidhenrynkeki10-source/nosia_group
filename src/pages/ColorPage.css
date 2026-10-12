@@ -18,7 +18,7 @@
   border: 1px solid;
   border-radius: 30px;
   padding: 8px 20px;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -63,7 +63,7 @@
 }
 
 .cp-name {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -72,7 +72,7 @@
 }
 
 .cp-description {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   opacity: 0.6;
@@ -103,7 +103,7 @@
 }
 
 .cp-code-label {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -129,7 +129,7 @@
   border: none;
   border-radius: 32px;
   padding: 10px 24px;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -179,7 +179,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background: #1a1a1a;
   color: #fff;
 }

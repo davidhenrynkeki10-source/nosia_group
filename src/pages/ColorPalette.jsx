@@ -16,17 +16,22 @@ export default function ColorPalette() {
     <div className="palette-wrapper">
       <div className="palette-container">
         {colors.map((color) => {
+          const hasText = Boolean(color.dashColor)
           const isActive = activeColor === color.name
 
           return (
             <button
               key={color.name}
-              className={`color-strip ${isActive ? 'is-tapped' : ''}`}
+              className={`color-strip ${hasText ? 'has-text' : 'no-text'} ${isActive ? 'is-tapped' : ''}`}
               style={{ backgroundColor: color.hex }}
-              onClick={() => handleStripClick(color.name)}
+              onClick={() => {
+                if (hasText) {
+                  handleStripClick(color.name)
+                }
+              }}
               aria-label={`${color.label} color strip`}
             >
-              {color.dashColor && (
+              {hasText && (
                 <div
                   className="dash-link-container"
                   onClick={(e) => {
@@ -58,7 +63,7 @@ export default function ColorPalette() {
                   </div>
                 </div>
               )}
-              <div className="strip-hover-overlay" />
+              {hasText && <div className="strip-hover-overlay" />}
             </button>
           )
         })}
