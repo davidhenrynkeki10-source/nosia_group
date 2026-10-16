@@ -23,7 +23,10 @@ export default function ColorPalette() {
             <button
               key={color.name}
               className={`color-strip ${hasText ? 'has-text' : 'no-text'} ${isActive ? 'is-tapped' : ''}`}
-              style={{ backgroundColor: color.hex }}
+              style={{
+                backgroundColor: color.hex,
+                '--strip-color': color.hex,
+              }}
               onClick={() => {
                 if (hasText) {
                   handleStripClick(color.name)
