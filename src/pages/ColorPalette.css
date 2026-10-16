@@ -9,6 +9,7 @@
 
 .palette-container {
   display: flex;
+  gap: 0;
   width: 50%;
   height: 400px;
   border-radius: 0;
@@ -35,6 +36,9 @@
   flex: 1;
   position: relative;
   border: none;
+  outline: none;
+  margin: 0;
+  margin-left: -1px;
   cursor: default;
   overflow: hidden;
   transition: flex 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
@@ -44,6 +48,10 @@
   justify-content: flex-end;
   padding-bottom: 28px;
   will-change: transform, flex;
+}
+
+.color-strip:first-child {
+  margin-left: 0;
 }
 
 .color-strip.has-text {
