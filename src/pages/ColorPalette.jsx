@@ -18,6 +18,7 @@ export default function ColorPalette() {
         {colors.map((color) => {
           const hasText = Boolean(color.dashColor)
           const isActive = activeColor === color.name
+          const isNoisiaEnergy = color.label === 'noisia. energy'
 
           return (
             <button
@@ -45,7 +46,7 @@ export default function ColorPalette() {
                     }
                   }}
                 >
-                  <span className="hover-scale-item strip-custom-label">
+                  <span className={`hover-scale-item strip-custom-label ${isNoisiaEnergy ? 'label-noisia-energy' : ''}`}>
                     {color.label}
                   </span>
                   <div className="hover-scale-item dash-item">

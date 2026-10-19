@@ -8,6 +8,7 @@
 }
 
 .palette-container {
+  position: relative;
   display: flex;
   gap: 0;
   width: 50%;
@@ -140,13 +141,17 @@
   cursor: pointer;
   position: absolute;
   bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   z-index: 10;
+  padding: 0 2px;
+  box-sizing: border-box;
 }
 
 .strip-custom-label {
@@ -159,6 +164,12 @@
   white-space: nowrap;
   word-break: normal;
   display: block;
+  max-width: 100%;
+}
+
+.strip-custom-label.label-noisia-energy {
+  font-size: 8.5px;
+  letter-spacing: -0.01em;
 }
 
 .hover-scale-item {
@@ -181,9 +192,21 @@
   border-radius: 1px;
 }
 
+@media (max-width: 1024px) {
+  .strip-custom-label.label-noisia-energy {
+    font-size: 7.5px;
+    letter-spacing: -0.02em;
+  }
+}
+
 @media (max-width: 768px) {
   .dash-link-container {
     bottom: 16px;
+    padding: 0 1px;
+  }
+
+  .hover-scale-item {
+    padding: 1px 0;
   }
 
   .strip-custom-label {
@@ -193,33 +216,20 @@
     word-break: normal;
   }
 
+  .strip-custom-label.label-noisia-energy {
+    font-size: 5.8px;
+    letter-spacing: -0.04em;
+  }
+
   .strip-dash-line {
     width: 10px;
     height: 2px;
   }
 }
 
-/* Responsive label styles for noisia. energy */
-.mobile-stacked-label {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.1;
-  font-size: 7px;
-}
-
-.desktop-inline-label {
-  display: inline;
-  white-space: nowrap;
-  font-size: 10px;
-}
-
-@media (max-width: 768px) {
-  .mobile-stacked-label {
-    display: flex;
+@media (max-width: 380px) {
+  .strip-custom-label.label-noisia-energy {
+    font-size: 5.2px;
+    letter-spacing: -0.05em;
   }
-
-  .desktop-inline-label {
-    display: none;
-  }
-}
+}
