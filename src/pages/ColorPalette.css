@@ -165,6 +165,7 @@
   word-break: normal;
   display: block;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .strip-custom-label.label-noisia-energy {
@@ -187,6 +188,15 @@
 
 .hover-scale-item:hover {
   transform: scale(1.15);
+}
+
+.hover-scale-item.dash-item {
+  cursor: pointer;
+  padding: 8px 10px;
+  margin: -6px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hover-scale-item.dash-item:hover {
@@ -219,6 +229,11 @@
 
   .hover-scale-item {
     padding: 1px 0;
+  }
+
+  .hover-scale-item.dash-item {
+    padding: 8px 6px;
+    margin: -6px 0;
   }
 
   .strip-custom-label {
@@ -254,4 +269,4 @@
   .strip-custom-label.label-noisia-ca {
     left: -2px;
   }
-}
+}

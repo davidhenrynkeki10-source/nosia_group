@@ -12,6 +12,13 @@ export default function ColorPalette() {
     }, 400)
   }
 
+  const handleColorClick = (color) => {
+    handleStripClick(color.name)
+    if (color.externalLink) {
+      window.open(color.externalLink, '_blank', 'noopener,noreferrer')
+    }
+  }
+
   return (
     <div className="palette-wrapper">
       <div className="palette-container">
@@ -31,7 +38,7 @@ export default function ColorPalette() {
               }}
               onClick={() => {
                 if (hasText) {
-                  handleStripClick(color.name)
+                  handleColorClick(color)
                 }
               }}
               aria-label={`${color.label} color strip`}
@@ -41,16 +48,33 @@ export default function ColorPalette() {
                   className="dash-link-container"
                   onClick={(e) => {
                     e.stopPropagation()
-                    handleStripClick(color.name)
-                    if (color.externalLink) {
-                      window.open(color.externalLink, '_blank')
-                    }
+                    handleColorClick(color)
                   }}
                 >
-                  <span className={`hover-scale-item strip-custom-label ${isNoisiaEnergy ? 'label-noisia-energy' : ''} ${isNoisiaCa ? 'label-noisia-ca' : ''}`}>
+                  <span
+                    className={`hover-scale-item strip-custom-label ${isNoisiaEnergy ? 'label-noisia-energy' : ''} ${isNoisiaCa ? 'label-noisia-ca' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      handleColorClick(color)
+                    }}
+                  >
                     {color.label}
                   </span>
-                  <div className="hover-scale-item dash-item">
+                  <div
+                    className="hover-scale-item dash-item"
+                    role="button"
+                    tabIndex={0}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      handleColorClick(color)
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.stopPropagation()
+                        handleColorClick(color)
+                      }
+                    }}
+                  >
                     <div
                       className="strip-dash-line"
                       style={{ backgroundColor: color.dashColor }}

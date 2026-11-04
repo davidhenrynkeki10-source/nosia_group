@@ -39,7 +39,7 @@ export const colors = [
     description: 'Darkest gray.',
     textColor: '#ffffff',
     dashColor: '#ffffff',
-    externalLink: 'https://sese-a.com',
+    externalLink: 'https://sese-nine.vercel.app/',
   },
   {
     name: 'dark-gray-6',
@@ -59,7 +59,7 @@ export const colors = [
     description: 'Dark gray.',
     textColor: '#ffffff',
     dashColor: '#AEE6E6',
-    externalLink: 'https://noisia.ca',
+    externalLink: 'https://noisia-ca.vercel.app/',
   },
   {
     name: 'medium-dark-gray',
@@ -69,6 +69,6 @@ export const colors = [
     description: 'Medium-dark gray.',
     textColor: '#ffffff',
     dashColor: '#FF7086',
-    externalLink: 'https://ppponte.co',
+    externalLink: 'https://ppponte.vercel.app/',
   },
 ]
