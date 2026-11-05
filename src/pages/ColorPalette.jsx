@@ -25,6 +25,7 @@ export default function ColorPalette() {
         {colors.map((color) => {
           const hasText = Boolean(color.dashColor)
           const isActive = activeColor === color.name
+          const isTroca = color.name === 'dark-gray-6' || color.label?.toLowerCase().includes('troca')
           const isNoisiaEnergy = color.label === 'noisia. energy'
           const isNoisiaCa = color.label === 'noisia - ca'
 
@@ -52,7 +53,7 @@ export default function ColorPalette() {
                   }}
                 >
                   <span
-                    className={`hover-scale-item strip-custom-label ${isNoisiaEnergy ? 'label-noisia-energy' : ''} ${isNoisiaCa ? 'label-noisia-ca' : ''}`}
+                    className={`hover-scale-item strip-custom-label ${isTroca ? 'label-troca' : ''} ${isNoisiaEnergy ? 'label-noisia-energy' : ''} ${isNoisiaCa ? 'label-noisia-ca' : ''}`}
                     onClick={(e) => {
                       e.stopPropagation()
                       handleColorClick(color)

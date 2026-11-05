@@ -168,6 +168,11 @@
   cursor: pointer;
 }
 
+.strip-custom-label.label-troca {
+  position: relative;
+  left: -3px;
+}
+
 .strip-custom-label.label-noisia-energy {
   position: relative;
   left: -3px;
@@ -210,6 +215,10 @@
 }
 
 @media (max-width: 1024px) {
+  .strip-custom-label.label-troca {
+    left: -2.5px;
+  }
+
   .strip-custom-label.label-noisia-energy {
     left: -2.5px;
     font-size: 7.5px;
@@ -243,6 +252,10 @@
     word-break: normal;
   }
 
+  .strip-custom-label.label-troca {
+    left: -2px;
+  }
+
   .strip-custom-label.label-noisia-energy {
     left: -2px;
     font-size: 5.8px;
@@ -260,6 +273,11 @@
 }
 
 @media (max-width: 380px) {
+  .strip-custom-label.label-troca {
+    left: -1.5px;
+    font-size: 6px;
+  }
+
   .strip-custom-label.label-noisia-energy {
     left: -1.5px;
     font-size: 5.2px;

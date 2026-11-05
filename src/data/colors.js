@@ -43,7 +43,7 @@ export const colors = [
   },
   {
     name: 'dark-gray-6',
-    label: 'noisia. energy',
+    label: 'T R O C A',
     hex: '#333333',
     rgb: 'rgb(51, 51, 51)',
     description: 'Very dark gray.',
