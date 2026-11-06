@@ -18,7 +18,7 @@
   margin-top: 40px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .palette-wrapper {
     padding: 20px 16px;
     justify-content: center;
@@ -170,7 +170,9 @@
 
 .strip-custom-label.label-troca {
   position: relative;
-  left: -3px;
+  left: -2px;
+  font-size: 7px;
+  letter-spacing: -0.01em;
 }
 
 .strip-custom-label.label-noisia-energy {
@@ -216,7 +218,9 @@
 
 @media (max-width: 1024px) {
   .strip-custom-label.label-troca {
-    left: -2.5px;
+    left: -1.8px;
+    font-size: 6.2px;
+    letter-spacing: -0.02em;
   }
 
   .strip-custom-label.label-noisia-energy {
@@ -253,7 +257,9 @@
   }
 
   .strip-custom-label.label-troca {
-    left: -2px;
+    left: -1.5px;
+    font-size: 5px;
+    letter-spacing: -0.04em;
   }
 
   .strip-custom-label.label-noisia-energy {
@@ -274,8 +280,9 @@
 
 @media (max-width: 380px) {
   .strip-custom-label.label-troca {
-    left: -1.5px;
-    font-size: 6px;
+    left: -1.2px;
+    font-size: 4.5px;
+    letter-spacing: -0.05em;
   }
 
   .strip-custom-label.label-noisia-energy {
